@@ -32,4 +32,4 @@ Steps:
 3) Add reference to the task in PR description;
 4) Add lables;
 5) Add project;
-6) Add reviewers;
+6) Add reviewers.
