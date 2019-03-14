@@ -22,6 +22,7 @@ Steps:
 2) Add lables;
 3) Add project;
 4) Add assignees.
+5) After PR merge: comment and close with `"Done in #{PR_NUMBER}"`
 
 ### Task execution
 

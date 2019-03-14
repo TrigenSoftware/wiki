@@ -16,6 +16,19 @@ const {
 </table>
 ```
 
+### To handle `children` use `Children.map` or `Children.toArray`
+
+1) This methods can pass and autofill `key`s for every child.
+2) Filters `null`s in output.
+
+```jsx
+<ul>
+    {Children.map(children, (child) => child && (
+        <li>{child}</li>
+    ))}
+</ul>
+```
+
 ### Be sure to pass `props` on.
 
 ```jsx
