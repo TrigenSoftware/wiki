@@ -128,9 +128,11 @@ Rule:
 Example:
 
 ```css
-sizeText: 1rem;
-sizeTextLg: 2rem;
-colorText: white;
-colorBackground: #007bff;
-colorBackgroundHover: #0069d9;
+:vars {
+    sizeText: 1rem;
+    sizeTextLg: 2rem;
+    colorText: white;
+    colorBackground: #007bff;
+    colorBackgroundHover: #0069d9;
+}
 ```
