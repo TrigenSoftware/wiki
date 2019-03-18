@@ -25,7 +25,7 @@ const {
 
 ```jsx
 <ul>
-    {Children.map(children, (child) => child && (
+    {Children.map(children, child => child && (
         <li>{child}</li>
     ))}
 </ul>
