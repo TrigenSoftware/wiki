@@ -1,6 +1,8 @@
 
 # Components Code Style [WIP]
 
+## React
+
 ### Pass `children` explicitly.
 
 ```jsx
@@ -112,3 +114,23 @@ propTypes = {
 ```
 
 > TODO: `React.forwardRef`
+
+## Stylable
+
+### Variables naming
+
+Rule:
+
+```
+[type][Name][Variant?]
+```
+
+Example:
+
+```css
+sizeText: 1rem;
+sizeTextLg: 2rem;
+colorText: white;
+colorBackground: #007bff;
+colorBackgroundHover: #0069d9;
+```
