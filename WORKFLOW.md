@@ -1,5 +1,9 @@
 # Workflow
 
+### Sprints
+
+Each sprint developing should goes in `dev` branch. Merge to master should be in the end of sprint.
+
 ### Task creating
 
 Template:
