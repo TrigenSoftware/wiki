@@ -11,7 +11,7 @@ const {
 } = this.props;
 
 <table
-    {...getHtmlProps(props)}
+    {...props}
 >
     {children}
 </table>
@@ -60,16 +60,6 @@ export function MenuButton({
 </Button>
 ```
 
-### Pass `props` on to HTML-elements with `getHtmlProps` helper.
-
-```jsx
-<table
-    {...getHtmlProps(props)}
->
-    {children}
-</table>
-```
-
 ### Do not pass excess props.
 
 ```jsx
@@ -79,18 +69,10 @@ const {
 } = this.props;
 
 <div
-    {...getHtmlProps(props, ['onChange'])}
+    {...omit(props, ['onChange'])}
 >
     {children}
 </div>
-// or
-Reflect.deleteProperty(props, 'onChange');
-
-<Button
-    {...props}
->
-    {children}
-</Button>
 // ...
 // `onChange` used in other place
 onChange(event) {
@@ -106,8 +88,8 @@ propTypes = {
 }
 // ...
 <input
-    {...getHtmlProps(props)}
     ref={elementRef}
+    {...props}
     {/* ... */}
 />
 ```
