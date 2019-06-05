@@ -9,3 +9,5 @@
 - Interactive components should have outline on `:focus`.
 
 - Interactive components should have `cursor: pointer` and `cursor: default` on `:disabled`.
+
+- Use `value.trim()` on `setState` with values, where spaces no need.
